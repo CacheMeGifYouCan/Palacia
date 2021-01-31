@@ -1,6 +1,5 @@
-# Project 3 - NewsWeek Clone
+# Project 4 - The Heron 
 
-> This is the Project 2 in the Microverse course
 
 ### View in browser
 [Live](https://greg0109.github.io/NewsWeek/)
@@ -13,12 +12,8 @@
 - HTML
 - CSS
 
-## Authors
+## Author
 
-👤 **Greg**
-
-- GitHub: [@Greg0109](https://github.com/greg0109)
-- Twitter: [@Greg_0109](https://twitter.com/greg_0109)
 
 👤 **Marcus**
 
