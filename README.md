@@ -1,5 +1,5 @@
 ![Name](https://img.shields.io/badge/Marcus-Developer-red)
-
+![Date](https://img.shields.io/badge/github/release-date/CacheMeGifYouCan/ThePalacia)
 
 # Project 4 - The Palacia
 
