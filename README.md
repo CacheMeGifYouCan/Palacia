@@ -1,11 +1,11 @@
 ![Name](https://img.shields.io/badge/Marcus-Developer-red?style=for-the-badge)
-![Issues](https://img.shields.io/github/issues/cachemegifyoucan/thepalacia?style=for-the-badge)
+![Issues](https://img.shields.io/github/issues/cachemegifyoucan/palacia?style=for-the-badge)
 ![Followers](https://img.shields.io/github/followers/cachemegifyoucan?style=for-the-badge)
 ![Stars](https://img.shields.io/github/stars/cachemegifyoucan?style=for-the-badge)
-![Pull Requests](https://img.shields.io/github/issues-pr/cachemegifyoucan/thepalacia?style=for-the-badge)
-![Last Commit](https://img.shields.io/github/last-commit/cachemegifyoucan/thepalacia/main?style=for-the-badge)
+![Pull Requests](https://img.shields.io/github/issues-pr/cachemegifyoucan/palacia?style=for-the-badge)
+![Last Commit](https://img.shields.io/github/last-commit/cachemegifyoucan/palacia/main?style=for-the-badge)
 
-# Project 4 - The Palacia
+# Project 4 - Palacia
 
 
 ### View in browser
