@@ -24,31 +24,26 @@
 <body>
     <!-- NavBar -->
     <section>
-        <nav id="mainNavbar" class="navba navbar-hide navbar-expand-md p-2 fixed-top colorMain">
-            <!-- DesKtop -->
-                <a class="navbar-brand my-1 d-none d-md-inline" href="#">
-                  <img id="logo" src="./images/logo-ca-Koi-23.png" width="70" height="70" class="img-fluid" alt="">
-                  <h3 class="mb-0 d-inline">SAKOI</h3>
-                </a>
-
-                <!-- Mobile -->
+        <nav id="mainNavbar" class="navbar navbar-hide navbar-expand-md p-2 fixed-top colorMain">
+                <!-- Mobile Logo -->
                 <a class="navbar-brand my-1 d-md-none d-flex col-12 justify-content-center" href="#">
-                  <img id="logoNav" src="./assets/logo_white.png" width="30" height="30" alt="">
+                  <img src="./assets/logo_white.png" width="50" height="50" alt="">
                   <h3 class="mb-0 d-inline colorMain titles2 font-weight-bold">palacia</h3>
                 </a>
                 
-                <div class="col-12 d-flex justify-content-center">
+                <!-- Mobile Icons -->
+                <div class="col-12 d-sm-none d-flex justify-content-center">
                     <span>
-                        <a href="#">
+                        <a href="./search.html" title="searchlink">
                             <i class="fas fa-search colorMain"></i>
                         </a>
-                        <a href="#">
+                        <a href="./login.html" title="userlink">
                             <i class="far fa-user colorMain"></i>
                         </a>
-                        <a href="#">
+                        <a href="#" title="rsslink">
                             <i class="fas fa-rss colorMain"></i>
                         </a>
-                        <a href="#">
+                        <a href="#" title="twitterlink">
                             <i class="fab fa-twitter colorMain"></i>
                         </a>
                         <button class="navbar-toggler navbar-light" title="none" data-toggle="collapse" data-target="#navbarSupportedContent">
@@ -57,18 +52,38 @@
                     </span>
                 </div>
 
-            <div class="collapse navbar-collapse d-md-inline-flex justify-content-end" id="navbarSupportedContent">
+                <!-- Collapsed Desktop Nav -->
+            <div class="collapse navbar-collapse d-md-inline-flex justify-content-between" id="navbarSupportedContent">
+                <!-- DesKtop -->
+                <a class="navbar-brand my-1 d-none d-md-inline" href="./index.html">
+                    <img id="logo" src="./assets/logo_white.png" width="70" height="70" class="img-fluid justify-self-start ml-2" alt="brandlogo">
+                  </a>
               <ul id="navLinks" class="navbar-nav text-primary">
+                  <li>
+                    <a href="./search.html" title="searchlink">
+                        <i class="fas fa-search colorMain d-none d-md-block"></i>
+                    </a>
+                  </li>
                 <li class="nav-item active" data-toggle="collapse"  data-target=".navbar-collapse.show">
-                  <a class="nav-link text-white font-weight-bold" href="#">CRUISES <span class="sr-only">(current)</span></a>
+                  <a class="nav-link text-white font-weight-bolder" href="./search.html">CRUISES <span class="sr-only">(current)</span></a>
+                </li>
+                <li>
+                    <a href="./login.html" title="userlink">
+                        <i class="far fa-user colorMain d-none d-md-block"></i>
+                    </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a class="nav-link text-white font-weight-bolder" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     ABOUT
                   </a>
                 </li>
+                <li>
+                    <a href="#" title="rsslink">
+                        <i class="fas fa-rss colorMain d-none d-md-block"></i>
+                    </a>
+                </li>
                 <li class="nav-item" data-toggle="collapse"  data-target=".navbar-collapse.show">
-                    <a class="nav-link text-white" href="#">BLOG</a>
+                    <a class="nav-link text-white font-weight-bolder" href="#">BLOG</a>
                   </li>
             </ul>
             </div>
@@ -83,11 +98,11 @@
                     <form class="px-2 text-left my-4 py-4 titles3" id="bookForm">
                         <div class="form-group">
                           <label for="formDestination">Search By Destination:</label>
-                          <input type="email" class="form-control" id="formDestination" required="required" placeholder="Jamaica">
+                          <input type="text" class="form-control" id="formDestination" required="required" placeholder="Jamaica">
                         </div>
                         <div class="form-group">
                           <label for="formSelect1">How Many People?</label>
-                          <select class="form-control" required="required" id="formSelect1">
+                          <select class="form-control w-75" required="required" id="formSelect1">
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -99,10 +114,12 @@
                             <input type="checkbox" class="form-check-input" id="formCheck">
                             <label class="form-check-label" for="formCheck">I require special assistance</label>
                           </div>
-                          <button type="submit" class="btn btn-lg colorMain text-white w-100 titles" id="bookBtn">SEARCH</button>
+                          <a href="./search.html">
+                              <button type="button" class="btn btn-lg colorMain text-white w-100 titles" id="bookBtn">SEARCH</button>
+                          </a>
                       </form>
                       <figure class="titles">
-                          <button class="btn btn-lg mt-5 col-6 lowerBtns" id="repBtn">
+                          <button type="button" class="btn btn-lg mt-5 col-6 lowerBtns" id="repBtn" data-toggle="modal" data-target="#bookingform" role="button">
                               LIVE CHAT
                           </button>
                       </figure>
@@ -146,20 +163,20 @@
         <div class="carousel-inner">
           <div class="carousel-item active carousel1">
             <div class="carousel-caption">
-                <h5 class="font-weight-bold">SWIPE RIGHT</h5>
-                <p class="lead">Some of our luxury cruises</p>
+                <h5 class="font-weight-bold font-italic titles display-4">SWIPE RIGHT</h5>
+                <p class="lead font-weight-bolder titles">For some of our luxury cruises</p>
               </div>
           </div>
           <div class="carousel-item carousel2">
             <div class="carousel-caption">
-                <h5 class="font-weight-bold">SWIPE RIGHT</h5>
-                <p class="lead">Some of our luxury cruises</p>
+                <h5 class="font-weight-bold font-italic titles display-4">SWIPE RIGHT</h5>
+                <p class="lead font-weight-bolder titles">For some of our luxury cruises</p>
               </div>
           </div>
           <div class="carousel-item carousel3">
             <div class="carousel-caption">
-                <h5 class="font-weight-bold">SWIPE RIGHT</h5>
-                <p class="lead">Some of our luxury cruises</p>
+                <h5 class="font-weight-bold font-italic titles display-4">SWIPE RIGHT</h5>
+                <p class="lead font-weight-bolder titles">For some of our luxury cruises</p>
               </div>
           </div>
           </div>
@@ -169,7 +186,7 @@
           <!-- Lower Sections -->
           <section>
               <div class="row row-cols-1">
-                <div class="card text-left colorMain container mt-2 border-0">
+                <div class="card text-left colorMain container mt-2 border-0 py-5">
                     <div class="row card-body d-flex justify-content-center">
                       <div class="col-8">
                           <h3 class="card-title titles mb-4 colorMain font-weight-bold">
@@ -189,7 +206,7 @@
                       </figure>
                     </div>
                   </div>
-                <div class="card text-left colorGray container border-0">
+                <div class="card text-left colorGray container border-0 py-5">
                     <div class="row card-body d-flex justify-content-center">
                       <div class="col-8">
                           <h3 class="card-title titles mb-4 colorGray font-weight-bold">
@@ -209,7 +226,7 @@
                       </figure>
                     </div>
                   </div>
-                <div class="card text-left colorBlue container border-0">
+                <div class="card text-left colorBlue container border-0 py-5">
                     <div class="row card-body d-flex justify-content-center">
                       <div class="col-8">
                           <h3 class="card-title titles mt-3 mb-4 text-decoration-none colorBlue">
@@ -252,7 +269,7 @@
     </ul>
     <!-- Icon -->
     <div class="nav text-center justify-content-center flex-sm-row col-12 col-md-1 border-bottom border-top titles">
-        <i class="far fa-map-marker-alt rounded-circle"></i>
+        <i class="far footerMap fa-map-marker-alt rounded-circle"></i>
     </div>
     <!-- Nav2 -->
     <ul class="nav text-center justify-content-center flex-sm-row col-12 col-md-5 border-bottom border-top titles pt-2">
@@ -277,7 +294,9 @@
             <div class="form-group mx-1 mb-2 d-md-inline-flex">
                 <label for="inputSubscribe" class="mr-3 titles3 text-white d-flex justify-content-center">SUBSCRIBE</label>
                 <div class="d-inline-flex">
-                    <input type="email" class="form-control rounded-0 colorBlack titles3 border-secondary" id="inputSubscribe" placeholder="your@example.com">
+                    <input type="email" class="form-control rounded-0 colorBlack titles3 border-secondary d-none d-lg-block" class="inputSubscribe" placeholder="your@example.com">
+                    <input type="email" class="form-control rounded-0 colorBlack titles3 border-secondary d-none d-md-block d-lg-none w-25" class="inputSubscribe" placeholder="your@example.com">
+                    <input type="email" class="form-control rounded-0 colorBlack titles3 border-secondary d-block d-sm-none w-100" class="inputSubscribe" placeholder="your@example.com">
                     <button type="submit" class="btn btn-secondary rounded-0 titles smaller">send</button>
                 </div>
               </div>
@@ -303,6 +322,48 @@
               </div>
         </div>
    </section>
+
+   <!-- Modal -->
+
+   <section class="modal fade" id="bookingform" tabindex="-1" role="dialog" aria-labelledby="bookingform" aria-hidden="true">
+    <div class="container">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bookingTitle">New Booking</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div>Please fill out the form below and we'll get back to you as soon as possible</div>
+        <form action="">
+            <div class="form-group mt-3">
+                <label for="email">Email address</label>
+                <input type="email" id="email" class="form-control" placeholder="name@example.com" required="required">
+            </div>
+            <div class="form-group mt-3">
+                <label for="guestsAdult">Number of Adult Guests</label>
+                <input type="number" id="guestsAdult" class="form-control" value="1" required="required">
+            </div>
+            <div class="form-group mt-3">
+                <label for="guestsChildren">Number of Child Guests</label>
+                <input type="number" id="guestsChildren" class="form-control" value="1" required="required">
+            </div>
+            <div class="form-group mt-3">
+                <label for="additonalRequests">Additional Requests</label>
+                <textarea cols="5" rows="5" type="text" id="additonalRequests" class="form-control" placeholder="Allergies, medication, etc.."></textarea>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary">Submit Request</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </form>
+        </div>
+      </div>
+    </div>
+</div>
+</section>
 
     
     <!-- jQuery and Bootstrap Bundle (includes Popper) -->
