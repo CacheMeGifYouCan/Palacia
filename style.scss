@@ -4,6 +4,12 @@ html {
 body {
     background: #fafafa;
 }
+
+.fill {
+    height: 100vh;
+    min-height: 100vh;
+}
+
 $colorMain: #D35749;
 $icons: 10px;
 $text: #fefdfc;
@@ -58,6 +64,9 @@ $colorBlack: #000;
 }
 .colorBlack {
     background: $colorBlack;
+}
+.colorBlueTxt {
+    color: $colorBlue;
 }
 
 .fas,
