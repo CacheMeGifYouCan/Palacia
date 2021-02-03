@@ -16,11 +16,16 @@ html {
 
 body {
   background: #fafafa;
+  padding-top: 70px;
+}
+
+iframe {
+    border: none;
 }
 
 .fill {
-  height: 130vh;
-  min-height: 130vh;
+  height: 140vh;
+  min-height: 140vh;
 }
 
 .titles {
