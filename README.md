@@ -11,7 +11,7 @@
 [Live](https://greg0109.github.io/NewsWeek/)
 
 ### Screenshot
-![Screenshot](assets/NewsWeek.png)
+![Screenshot](mockup.png)
 
 ## Built With
 
