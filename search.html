@@ -3,14 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta content="ie=edge">
-
     <link rel="icon" href="./assets/logo_dark.png">
-    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-    <style type="text/css">
+    <style>
       body {
           padding-top: 90px;
       }
@@ -52,7 +49,7 @@
                         <a href="./login.html" title="twitterlink">
                             <i class="fab fa-twitter colorMain"></i>
                         </a>
-                        <button class="navbar-toggler navbar-light" title="none" data-toggle="collapse" data-target="#navbarSupportedContent">
+                        <button type="submit" class="navbar-toggler navbar-light" title="none" data-toggle="collapse" data-target="#navbarSupportedContent">
                             <span id="navtoggler" class="text-white"><i class="fas fa-bars"></i></span>
                         </button>
                     </span>
@@ -71,7 +68,7 @@
                   </a>
                 </li>
                 <li class="nav-item active" data-toggle="collapse"  data-target=".navbar-collapse.show">
-                  <a class="nav-link text-white font-weight-bold" href="#"><u>CRUISES <span class="sr-only">(current)</span></a></u>
+                  <a class="nav-link text-white font-weight-bold" href="#">CRUISES <span class="sr-only">(current)</span></a>
                 </li>
                 <li>
                     <a href="./login.html" title="userlink">
@@ -98,7 +95,7 @@
 
         <!-- Search Form -->
         <section class="mt-5 colorMain" id="searchForm">
-          <form action="#" method="POST" id="formContainer" class="text-white titles font-weight-bold colorLightGray">
+          <form action="./moredetails.html" method="POST" id="formContainer" class="text-white titles font-weight-bold colorLightGray">
             <div class="form-group mx-auto">
               <label for="cruisename" class="colorBlkTxt">NAME:*</label>
               <input type="text" name="cruisename" id="cruisename" class="form-control">
@@ -224,7 +221,7 @@
               </a>
               <div class="card-img-overlay">
                 <p class="card-text font-weight-bolder">
-                  <a href="#" class="text-warning"> RATING: <i class="fas fa-star mx-0"></i><i class="fas fa-star mx-0"></i></i><i class="fas fa-star mx-0"></i><i class="fas fa-star mx-0"></i> </a>
+                  <a href="#" class="text-warning"> RATING: <i class="fas fa-star mx-0"></i><i class="fas fa-star mx-0"></i><i class="fas fa-star mx-0"></i><i class="fas fa-star mx-0"></i> </a>
                 </p>
               </div>
             </div>
@@ -525,13 +522,13 @@
   
      <!-- Lower Nav -->
      <section class="row colorBlack mx-auto">
-          <form action="" class="col-8 col-sm-4 col-md-4 form-inline py-3 mx-auto">
+          <form action="./index.html" class="col-8 col-sm-4 col-md-4 form-inline py-3 mx-auto">
               <div class="form-group mx-1 mb-2 d-md-inline-flex">
-                  <label for="inputSubscribe" class="mr-3 titles3 text-white d-flex justify-content-center">SUBSCRIBE</label>
+                  <label class="mr-3 titles3 text-white d-flex justify-content-center">SUBSCRIBE</label>
                   <div class="d-inline-flex">
-                      <input type="email" class="form-control rounded-0 colorBlack titles3 border-secondary d-none d-lg-block" class="inputSubscribe" placeholder="your@example.com">
-                      <input type="email" class="form-control rounded-0 colorBlack titles3 border-secondary d-none d-md-block d-lg-none w-25" class="inputSubscribe" placeholder="your@example.com">
-                      <input type="email" class="form-control rounded-0 colorBlack titles3 border-secondary d-block d-sm-none w-100" class="inputSubscribe" placeholder="your@example.com">
+                      <input type="email" class="form-control rounded-0 colorBlack titles3 border-secondary d-none d-lg-block inputSubscribe" placeholder="your@example.com">
+                      <input type="email" class="form-control rounded-0 colorBlack titles3 border-secondary d-none d-md-block d-lg-none w-25 inputSubscribe" placeholder="your@example.com">
+                      <input type="email" class="form-control rounded-0 colorBlack titles3 border-secondary d-block d-sm-none w-100 inputSubscribe" placeholder="your@example.com">
                       <button type="submit" class="btn btn-secondary rounded-0 titles smaller">send</button>
                   </div>
                 </div>
@@ -559,46 +556,46 @@
      </section>
   
      <!-- Modal -->
-  
-     <section class="modal fade" id="bookingform" tabindex="-1" role="dialog" aria-labelledby="bookingform" aria-hidden="true">
-      <div class="container">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="bookingTitle">New Booking</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-              <div>Please fill out the form below and we'll get back to you as soon as possible</div>
-          <form action="">
-              <div class="form-group mt-3">
-                  <label for="email">Email address</label>
-                  <input type="email" id="email" class="form-control" placeholder="name@example.com" required="required">
-              </div>
-              <div class="form-group mt-3">
-                  <label for="guestsAdult">Number of Adult Guests</label>
-                  <input type="number" id="guestsAdult" class="form-control" value="1" required="required">
-              </div>
-              <div class="form-group mt-3">
-                  <label for="guestsChildren">Number of Child Guests</label>
-                  <input type="number" id="guestsChildren" class="form-control" value="1" required="required">
-              </div>
-              <div class="form-group mt-3">
-                  <label for="additonalRequests">Additional Requests</label>
-                  <textarea cols="5" rows="5" type="text" id="additonalRequests" class="form-control" placeholder="Allergies, medication, etc.."></textarea>
-              </div>
-              <div class="modal-footer d-flex justify-content-center">
-                  <button type="submit" class="btn btn-primary">Submit Request</button>
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              </div>
-          </form>
-          </div>
+
+   <section class="modal fade" id="bookingform" tabindex="-1" role="dialog" aria-labelledby="bookingform" aria-hidden="true">
+    <div class="container">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bookingTitle">New Booking</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div>Please fill out the form below and we'll get back to you as soon as possible</div>
+        <form action="#">
+            <div class="form-group mt-3">
+                <label for="email">Email address</label>
+                <input type="email" id="email" class="form-control" placeholder="name@example.com" required="required">
+            </div>
+            <div class="form-group mt-3">
+                <label for="guestsAdult">Number of Adult Guests</label>
+                <input type="number" id="guestsAdult" class="form-control" value="1" required="required">
+            </div>
+            <div class="form-group mt-3">
+                <label for="guestsChildren">Number of Child Guests</label>
+                <input type="number" id="guestsChildren" class="form-control" value="1" required="required">
+            </div>
+            <div class="form-group mt-3">
+                <label for="additonalRequests">Additional Requests</label>
+                <textarea cols="5" rows="5" id="additonalRequests" class="form-control" placeholder="Allergies, medication, etc.."></textarea>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary">Submit Request</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </form>
         </div>
       </div>
-  </div>
-  </section>
+    </div>
+</div>
+</section>
 
     
     <!-- jQuery and Bootstrap Bundle (includes Popper) -->

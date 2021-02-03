@@ -1,278 +1,288 @@
-html {
-    overflow-x: hidden;
-}
-body {
-    background: #fafafa;
-}
-
-.fill {
-    height: 100vh;
-    min-height: 100vh;
-}
-
-$colorMain: #D35749;
+$colorMain: #d35749;
 $icons: 10px;
 $text: #fefdfc;
 $text2: #555;
 $title: open-sans, sans-serif;
 $paratext: open-sans-condensed, sans-serif;
 $colorGray: rgb(152, 164, 165);
-$colorLightGray: #eeeeee;
+$colorLightGray: #eee;
 $colorBlue: rgb(81, 155, 215);
 $colorBlack: #000;
 $italic: alpine-script, sans-serif;
 
+html {
+  overflow-x: hidden;
+}
+body {
+  background: #fafafa;
+}
+.fill {
+  height: 100vh;
+  min-height: 100vh;
+}
+
 .titles {
-    font-family: $paratext;
-    letter-spacing: 1.5px;
+  font-family: $paratext;
+  letter-spacing: 1.5px;
 }
 
 .italicz {
-    font-family: $italic;
-    font-weight: 400;
-    font-style: normal;
+  font-family: $italic;
+  font-weight: 400;
+  font-style: normal;
 }
 
-
 .titles2 {
-    font-family: $paratext, serif;
-    letter-spacing: 1.5px;
+  font-family: $paratext, serif;
+  letter-spacing: 1.5px;
 }
 
 .titles3 {
-    font-family: trade-gothic-next-condensed, sans-serif;
+  font-family: trade-gothic-next-condensed, sans-serif;
 }
+
 .colorMain {
-    background: $colorMain;
-    color: $text;
-    font-weight: lighter;
+  background: $colorMain;
+  color: $text;
+  font-weight: lighter;
 }
 
 .colorGray {
-    background: $colorGray;
-    color: $text;
+  background: $colorGray;
+  color: $text;
 }
+
 .colorLightGray {
-    background: $colorLightGray;
+  background: $colorLightGray;
 }
+
 .colorGrayTxt {
-    color: $text;
+  color: $text;
 }
+
 .colorBlkTxt {
-    color: $colorBlack;
+  color: $colorBlack;
 }
+
 .colorWhtTxt {
-    color: $text;
+  color: $text;
 }
 
 .colorBlue {
-    background: $colorBlue;
-    color: $text;
+  background: $colorBlue;
+  color: $text;
 }
+
 .colorBlack {
-    background: $colorBlack;
+  background: $colorBlack;
 }
+
 .colorBlueTxt {
-    color: $colorBlue;
+  color: $colorBlue;
 }
 
 .fas,
 .far,
 .fab {
-    margin: $icons;
+  margin: $icons;
 }
+
 .footerMap {
-    padding: 8px;
-    font-size: 30px;
-    color: $text;
+  padding: 8px;
+  font-size: 30px;
+  color: $text;
 }
 
 .fas:hover,
 .far:hover,
 .fab:hover {
-    transform: scale(1.5,1.5);
-    transition: ease-out 300ms;
+  transform: scale(1.5,1.5);
+  transition: ease-out 300ms;
 }
 
 .nav-link:hover {
-    filter: brightness(300%);
-    transition: 800ms;
+  filter: brightness(300%);
+  transition: 800ms;
 }
 
 // Carousel
-
 .carousel1 {
-    background: url("./assets/Images/ben-o-bro-ZbWSt_Hz0-I-unsplash.jpg") fixed center / cover no-repeat;
-    min-height: 435px;
-    position: relative;
-    background-size: cover;
+  background: url("./assets/Images/ben-o-bro-ZbWSt_Hz0-I-unsplash.jpg") fixed center / cover no-repeat;
+  min-height: 435px;
+  position: relative;
+  background-size: cover;
 }
+
 .carousel2 {
-    background: url("./assets/Images/yannick-bakker-Qy53bHnSQUc-unsplash.jpg") fixed center / cover no-repeat;
-    min-height: 435px;
-    position: relative;
-    background-size: cover;
+  background: url("./assets/Images/yannick-bakker-Qy53bHnSQUc-unsplash.jpg") fixed center / cover no-repeat;
+  min-height: 435px;
+  position: relative;
+  background-size: cover;
 }
+
 .carousel3 {
-    background: url("./assets/Images/jonatan-pie-OPOg0fz5uIs-unsplash.jpg") fixed center / cover no-repeat;
-    min-height: 435px;
-    position: relative;
-    background-size: cover;
+  background: url("./assets/Images/jonatan-pie-OPOg0fz5uIs-unsplash.jpg") fixed center / cover no-repeat;
+  min-height: 435px;
+  position: relative;
+  background-size: cover;
 }
 
 #showcase {
-    background: url("./assets/Images/ben-o-bro-ZbWSt_Hz0-I-unsplash.jpg") fixed center / cover no-repeat;
-    min-height: 870px;
-    position: relative;
-    background-size: cover;
+  background: url("./assets/Images/ben-o-bro-ZbWSt_Hz0-I-unsplash.jpg") fixed center / cover no-repeat;
+  min-height: 870px;
+  position: relative;
+  background-size: cover;
 
     #repBtn {
-        font-family: aria-text-g2, sans-serif;
+      font-family: aria-text-g2, sans-serif;
+    }
 
-    }
     .searchSection {
-        background: $text;
+      background: $text;
     }
-    
 
     #header {
-        z-index: 2;
-        color: $text;
-        width: 55%;
+      z-index: 2;
+      color: $text;
+      width: 55%;
     }
+
     #overlay {
-        background: rgba(0,0,0,0.3);
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
+      background: rgba(0,0,0,0.3);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
     }
+
     h1 {
-        font-family: "Questrial", sans-serif;
-        line-height: 1;
+      font-family: "Questrial", sans-serif;
+      line-height: 1;
     }
 
     #bookForm {
-        font-size: 18px;
-        font-weight: 600;
-        color: $text2;
-        background: rgba(240, 240, 240, 0.8);
-        border-radius: 1rem;
-        animation-name: fadein;
-        animation-duration: 2s;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: 1;
+      font-size: 18px;
+      font-weight: 600;
+      color: $text2;
+      background: rgba(240, 240, 240, 0.8);
+      border-radius: 1rem;
+      animation-name: fadein;
+      animation-duration: 2s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: 1;
 
         #bookBtn {
-            font-size: 1.4rem;
-            font-weight: 500;
+          font-size: 1.4rem;
+          font-weight: 500;
         }
-
     }
 }
 
 #bookBtn:hover {
-    animation-name: fade;
-    animation-duration: 800ms;
-    animation-timing-function: ease-out;
-    animation-iteration-count: 1;
+  animation-name: fade;
+  animation-duration: 800ms;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
 }
 
 .lowerBtns {
-    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%);
 }
 
 #formContainer {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-self: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-self: center;
 
     div {
-        display: flex;
-        flex-basis: 10%;
-        text-align: center;
-        flex-direction: column;
+      display: flex;
+      flex-basis: 10%;
+      text-align: center;
+      flex-direction: column;
         select {
-            max-width: 10rem;
+          max-width: 10rem;
         }
     }
 }
 
 @keyframes fade {
-    0%{
-        opacity: 0.5;
+
+    0% {
+      opacity: 0.5;
     }
-    20%{
-        opacity: 0.6;
+    20%{ 
+      opacity: 0.6;
         
     }
-    40%{
-        opacity: 0.7;
+    40% {
+      opacity: 0.7;
     }
-    60%{
-        opacity: 0.8;
+    60% {
+      opacity: 0.8;
     }
-    80%{
-        opacity: 0.9;
+    80% {
+      opacity: 0.9;
     }
-    100%{
-        opacity: 1;
+    100% {
+      opacity: 1;
     }
-
 }
 
 @keyframes fadein {
-    0%{
-        opacity: 0.4;
-        transform: scale(0.5, 0.5);
+
+    0% {
+      opacity: 0.4;
+      transform: scale(0.5, 0.5);
     }
-    20%{
-        opacity: 0.5;
+    20% {
+      opacity: 0.5;
     }
-    40%{
-        opacity: 0.6;
+    40% {
+      opacity: 0.6;
     }
-    60%{
-        opacity: 0.7;
+    60% {
+      opacity: 0.7;
     }
-    80%{
-        opacity: 0.8;
+    80% {
+      opacity: 0.8;
     }
-    100%{
-        opacity: 1;
+    100% {
+      opacity: 1;
     }
 }
 
 @media (max-width: 768px) {
     #showcase {
         #header {
-            width: 100%;
+          width: 100%;
         }
     }
 }
 
 @media (min-width: 768px) {
+
     #formContainer {
-        flex-direction: row;
-        justify-content: center;
-        height: 15rem;
+      flex-direction: row;
+      justify-content: center;
+      height: 15rem;
 
         div {
-                display: inline-flex;
-                flex-basis: 10%;
-                width: 6rem;
-                flex-direction: column;
+          display: inline-flex;
+          flex-basis: 10%;
+          width: 6rem;
+          flex-direction: column;
 
                 button {
-                    margin-top: 2rem;
-                    flex-basis: 60%;
-                    min-width: 8.8rem;
-                    justify-items: center;
+                  margin-top: 2rem;
+                  flex-basis: 60%;
+                  min-width: 8.8rem;
+                  justify-items: center;
                 }
         }
     }
 }
+

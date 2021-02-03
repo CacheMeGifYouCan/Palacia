@@ -3,14 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta content="ie=edge">
-
     <link rel="icon" href="./assets/logo_dark.png">
-    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-    <style type="text/css">
+    <style>
       body {
           padding-top: 90px;
       }
@@ -97,7 +94,7 @@
         </section>
 
         <!-- Login Form -->
-        <section class="mt-4 fill">
+        <section class="my-5 fill">
           <form class="w-75 mx-auto font-weight-bolder p-3 shadow-sm mt-5">
             <div class="form-group">
               <label for="firstname">First Name*</label>
@@ -128,11 +125,11 @@
               <label for="PasswordConfirm">Confirm Password</label>
               <input type="password" required="required" class="form-control" id="PasswordConfirm" placeholder="Confirm Password">
             </div>
-            <a href="./index.html" target="_blank_">
-              <button type="submit" class="btn btn-danger font-weight-bolder">Sign Up</button>
+            <a href="./index.html" target="#bookingform">
+              <input type="submit" value="Sign Up" class="btn btn-danger font-weight-bolder">
             </a>
-            <a href="./index.html" target="_blank_">
-              <button type="submit" class="btn text-success font-weight-bolder">Sign In</button>
+            <a href="./index.html" target="#bookingform">
+              <input type="submit" value="Sign In" class="btn text-success font-weight-bolder">
             </a>
           </form>
         </section>
@@ -178,13 +175,13 @@
   
      <!-- Lower Nav -->
      <section class="row colorBlack mx-auto">
-          <form action="" class="col-8 col-sm-4 col-md-4 form-inline py-3 mx-auto">
+          <form action="./login.html" class="col-8 col-sm-4 col-md-4 form-inline py-3 mx-auto">
               <div class="form-group mx-1 mb-2 d-md-inline-flex">
-                  <label for="inputSubscribe" class="mr-3 titles3 text-white d-flex justify-content-center">SUBSCRIBE</label>
+                  <label class="mr-3 titles3 text-white d-flex justify-content-center">SUBSCRIBE</label>
                   <div class="d-inline-flex">
-                      <input type="email" class="form-control rounded-0 colorBlack titles3 border-secondary d-none d-lg-block" class="inputSubscribe" placeholder="your@example.com">
-                      <input type="email" class="form-control rounded-0 colorBlack titles3 border-secondary d-none d-md-block d-lg-none w-25" class="inputSubscribe" placeholder="your@example.com">
-                      <input type="email" class="form-control rounded-0 colorBlack titles3 border-secondary d-block d-sm-none w-100" class="inputSubscribe" placeholder="your@example.com">
+                      <input type="email" class="form-control rounded-0 colorBlack titles3 border-secondary d-none d-lg-block inputSubscribe" placeholder="your@example.com">
+                      <input type="email" class="form-control rounded-0 colorBlack titles3 border-secondary d-none d-md-block d-lg-none w-25 inputSubscribe" placeholder="your@example.com">
+                      <input type="email" class="form-control rounded-0 colorBlack titles3 border-secondary d-block d-sm-none w-100 inputSubscribe" placeholder="your@example.com">
                       <button type="submit" class="btn btn-secondary rounded-0 titles smaller">send</button>
                   </div>
                 </div>
@@ -212,46 +209,46 @@
      </section>
   
      <!-- Modal -->
-  
-     <section class="modal fade" id="bookingform" tabindex="-1" role="dialog" aria-labelledby="bookingform" aria-hidden="true">
-      <div class="container">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="bookingTitle">New Booking</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-              <div>Please fill out the form below and we'll get back to you as soon as possible</div>
-          <form action="">
-              <div class="form-group mt-3">
-                  <label for="email">Email address</label>
-                  <input type="email" id="email" class="form-control" placeholder="name@example.com" required="required">
-              </div>
-              <div class="form-group mt-3">
-                  <label for="guestsAdult">Number of Adult Guests</label>
-                  <input type="number" id="guestsAdult" class="form-control" value="1" required="required">
-              </div>
-              <div class="form-group mt-3">
-                  <label for="guestsChildren">Number of Child Guests</label>
-                  <input type="number" id="guestsChildren" class="form-control" value="1" required="required">
-              </div>
-              <div class="form-group mt-3">
-                  <label for="additonalRequests">Additional Requests</label>
-                  <textarea cols="5" rows="5" type="text" id="additonalRequests" class="form-control" placeholder="Allergies, medication, etc.."></textarea>
-              </div>
-              <div class="modal-footer d-flex justify-content-center">
-                  <button type="submit" class="btn btn-primary">Submit Request</button>
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              </div>
-          </form>
-          </div>
+
+   <section class="modal fade" id="bookingform" tabindex="-1" role="dialog" aria-labelledby="bookingform" aria-hidden="true">
+    <div class="container">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bookingTitle">New Booking</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div>Please fill out the form below and we'll get back to you as soon as possible</div>
+        <form action="">
+            <div class="form-group mt-3">
+                <label for="email">Email address</label>
+                <input type="email" id="email" class="form-control" placeholder="name@example.com" required="required">
+            </div>
+            <div class="form-group mt-3">
+                <label for="guestsAdult">Number of Adult Guests</label>
+                <input type="number" id="guestsAdult" class="form-control" value="1" required="required">
+            </div>
+            <div class="form-group mt-3">
+                <label for="guestsChildren">Number of Child Guests</label>
+                <input type="number" id="guestsChildren" class="form-control" value="1" required="required">
+            </div>
+            <div class="form-group mt-3">
+                <label for="additonalRequests">Additional Requests</label>
+                <textarea cols="5" rows="5" id="additonalRequests" class="form-control" placeholder="Allergies, medication, etc.."></textarea>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary">Submit Request</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </form>
         </div>
       </div>
-  </div>
-  </section>
+    </div>
+</div>
+</section>
 
     
     <!-- jQuery and Bootstrap Bundle (includes Popper) -->
