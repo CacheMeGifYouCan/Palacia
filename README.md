@@ -29,6 +29,8 @@
 
 Please watch this video [here](https://www.loom.com/share/4437f2c38b5a46ba88e7da85c62eaba7) to get a 5 minute breakdown of how to use the website.
 
+The dropdown menu for mobile navbar is working. This was omitted from the video due to time constraints.
+
 If you wish to set up the project yourself, ensure the assets folder is set in a location which is in the same folder as the other files. The Index and CSS should also be easily accessible. All the content in this project was linked to offline files in the assets folder.
 
 To get a local copy up and running follow these simple example steps.
