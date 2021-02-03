@@ -95,7 +95,7 @@ $italic: alpine-script, sans-serif;
 }
 
 .nav-link:hover {
-    transform: scale(1.3,1.3);
+    filter: brightness(300%);
     transition: 800ms;
 }
 
