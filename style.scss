@@ -13,9 +13,11 @@ $italic: alpine-script, sans-serif;
 html {
   overflow-x: hidden;
 }
+
 body {
   background: #fafafa;
 }
+
 .fill {
   height: 100vh;
   min-height: 100vh;
@@ -96,7 +98,7 @@ body {
 .fas:hover,
 .far:hover,
 .fab:hover {
-  transform: scale(1.5,1.5);
+  transform: scale(1.5, 1.5);
   transition: ease-out 300ms;
 }
 
@@ -132,7 +134,7 @@ body {
   min-height: 870px;
   position: relative;
   background-size: cover;
-
+  
     #repBtn {
       font-family: aria-text-g2, sans-serif;
     }
