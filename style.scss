@@ -14,26 +14,33 @@ $colorMain: #D35749;
 $icons: 10px;
 $text: #fefdfc;
 $text2: #555;
-$title: Georgia;
-$paratext: acumin-pro, sans-serif;
+$title: open-sans, sans-serif;
+$paratext: open-sans-condensed, sans-serif;
 $colorGray: rgb(152, 164, 165);
 $colorLightGray: #eeeeee;
 $colorBlue: rgb(81, 155, 215);
 $colorBlack: #000;
+$italic: alpine-script, sans-serif;
 
 .titles {
     font-family: $paratext;
     letter-spacing: 1.5px;
 }
 
+.italicz {
+    font-family: $italic;
+    font-weight: 400;
+    font-style: normal;
+}
+
 
 .titles2 {
-    font-family: Georgia, $paratext, serif;
+    font-family: $paratext, serif;
     letter-spacing: 1.5px;
 }
 
 .titles3 {
-    font-family: aria-text-g2, sans-serif;
+    font-family: trade-gothic-next-condensed, sans-serif;
 }
 .colorMain {
     background: $colorMain;
