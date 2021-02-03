@@ -8,7 +8,7 @@
 # Project 4 - Palacia
 
 ### View in browser
-[Live](https://greg0109.github.io/NewsWeek/)
+[Live](https://cachemegifyoucan.github.io/Palacia/)
 
 ### Screenshot
 ![Screenshot](mockup.png)
