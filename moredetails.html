@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="./assets/logo_dark.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
+    <!-- Our CSS -->
+    <link rel="stylesheet" href="./style.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    
+    <!-- Adobe Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/ywp6adv.css" crossorigin="anonymous">
+
+    <title> Palacia</title>
+</head>
+<body>
+    <!-- NavBar -->
+    <header>
+        <nav id="mainNavbar" class="navbar navbar-hide navbar-expand-md p-2 fixed-top colorMain">
+                <!-- Mobile Logo -->
+                <a class="navbar-brand my-1 d-md-none d-flex col-12 justify-content-center" href="./index.html">
+                  <img src="./assets/logo_white.png" width="50" height="50" alt="">
+                  <h3 class="mb-0 d-inline colorMain titles2 font-weight-bold">palacia</h3>
+                </a>
+                
+                <!-- Mobile Icons -->
+                <div class="col-12 d-sm-none d-flex justify-content-center">
+                    <span>
+                        <a href="./search.html" title="searchlink">
+                            <i class="fas fa-search font-weight-bold colorMain"></i>
+                        </a>
+                        <a href="./login.html" title="userlink">
+                            <i class="far fa-user colorMain"></i>
+                        </a>
+                        <a href="./login.html" title="rsslink">
+                            <i class="fas fa-rss colorMain"></i>
+                        </a>
+                        <a href="./login.html" title="twitterlink">
+                            <i class="fab fa-twitter colorMain"></i>
+                        </a>
+                        <button class="navbar-toggler navbar-light" title="none" data-toggle="collapse" data-target="#navbarSupportedContent">
+                            <span id="navtoggler" class="text-white"><i class="fas fa-bars"></i></span>
+                        </button>
+                    </span>
+                </div>
+
+                <!-- Collapsed Desktop Nav -->
+            <div class="collapse navbar-collapse d-md-inline-flex justify-content-between" id="navbarSupportedContent">
+                <!-- DesKtop -->
+                <a class="navbar-brand my-1 d-none d-md-inline" href="./index.html">
+                    <img id="logo" src="./assets/logo_white.png" width="70" height="70" class="img-fluid justify-self-start ml-2" alt="brandlogo">
+                  </a>
+              <ul id="navLinks" class="navbar-nav text-primary">
+                <li>
+                  <a href="./search.html" title="searchlink" class="text-decoration-none">
+                      <i class="fas fa-search colorMain text-decoration-none d-none d-md-block"></i>
+                  </a>
+                </li>
+                <li class="nav-item active" data-toggle="collapse"  data-target=".navbar-collapse.show">
+                  <a class="nav-link text-white font-weight-bolder" href="./search.html">CRUISES <span class="sr-only">(current)</span></a>
+                </li>
+                <li>
+                    <a href="./login.html" title="userlink font-weight-bold">
+                        <i class="far fa-user colorMain d-none d-md-block"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white font-weight-bolder" href="#">
+                    ABOUT
+                  </a>
+                </li>
+                <li>
+                    <a href="#" title="rsslink">
+                        <i class="fas fa-rss colorMain d-none d-md-block"></i>
+                    </a>
+                </li>
+                <li class="nav-item" data-toggle="collapse"  data-target=".navbar-collapse.show">
+                    <a class="nav-link text-white font-weight-bolder" href="#">BLOG</a>
+                  </li>
+            </ul>
+            </div>
+          </nav>
+        </header>
+
+        
+        <!-- Results 1 -->
+        <section class="d-flex my-5 mx-auto row container-lg">
+          <div class="col-12 mt-3">
+            <!-- Title -->
+            <h1 class="titles my-3 font-weight-bolder display-5 text-danger">SEARCH RESULTS</h1>
+            <h4 class=" titles mt-2 text-danger">CRUISE TO CARIBBEAN: JAMAICA</h4>
+            <table class="text-center mb-3 table-responsive display-5 text-wrap font-weight-bolder shadow table-sm justify-content-md-center d-flex">
+              <tr>
+                <td>TYPE: <span class="colorBlueTxt">N/A</span></td>
+                <td>LEVEL: <span class="colorBlueTxt">LUXURY</span></td>
+              </tr>
+              <tr>
+                <td>PROVIDER: <span class="colorBlueTxt">CELEBRITY CRUISES</span></td>
+                <td>GENDER: <span class="colorBlueTxt">ALL</span></td>
+              </tr>
+              <tr>
+                <td>COUNTRY: <span class="colorBlueTxt">JAMAICA</span></td>
+                <td>EMAIL: <span class="colorBlueTxt">EXAMPLE@EXAMPLE.COM</span></td>
+              </tr>
+              <tr>
+                <td>STATUS: <span class="colorBlueTxt">BOARDING</span></td>
+                <td>PERFORMANCE: <span class="colorBlueTxt">8+</span></td>
+              </tr>
+            </table>
+            <button type="submit" class="btn colorBlue px-2 py-0 my-2"><i class="fas fa-envelope"></i> APPLY</button>
+            <div class="text-wrap text-center shadow p-1 my-1 font-weight-bolder">
+              <span><i class="fas fa-phone font-weight-bolder colorBlueTxt"></i></span>TEL: <span><i class="fas fa-car font-weight-bolder colorBlueTxt"></i></span>SMOKING: YES <span><i class="fas fa-desktop font-weight-bolder colorBlueTxt"></i></span>WEBSITE: EXAMPLE.COM |<span><i class="fas fa-user-friends font-weight-bolder colorBlueTxt"></i></span>GUESTS ENROLLED: <span class="colorBlueTxt font-weight-bolder">2000</span> |<span><i class="fas fa-money-bill font-weight-bolder colorBlueTxt"></i></span>CUSTOMER SUPPORT: <span class="colorBlueTxt font-weight-bolder">YES</span>
+            </div>
+            <figure class="text-wrap text-center p-1 my-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis voluptate aliquid itaque tempore laborum perspiciatis ipsum optio cumque inventore reiciendis quaerat ducimus, id ad? Nostrum maiores saepe soluta unde!
+            </figure>
+            <figure class="colorLightGray py-5 px-3">
+              <a href="#" class="text-decoration-none colorBlkTxt">
+                <h2 class="text-center display-5"><i class="fas fa-mouse-pointer colorBlueTxt"></i> CLICK TO VIEW MORE DETAILS.</h2>
+              </a>
+            </figure>
+            <h4 class=" titles mt-2 mb-4 text-center text-danger"><span><i class="fas fa-bullseye font-weight-bolder text-danger"></i></span>MAP DIRECTIONS:</h4>
+          </div>
+          <figure class="container d-flex justify-content-center">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d485093.53711813857!2d-77.67058355478021!3d18.219421908533267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc24a5aab77c169e6!2sRoyal%20Caribbean%20Dock!5e0!3m2!1sen!2suk!4v1612281223638!5m2!1sen!2suk" width="600" height="450" aria-hidden="false" title="googlemaps" tabindex="0"></iframe>
+          </figure>
+        </section>
+
+        <hr>
+
+        <!-- Results 2 -->
+        <section class="d-flex my-5 mx-auto row container-lg">
+          <div class="col-12">
+            <h4 class=" titles mt-2 text-danger">CRUISE TO CARIBBEAN: BARBADOS</h4>
+            <table class="text-center mb-3 table-responsive display-5 text-wrap font-weight-bolder shadow table-sm justify-content-md-center d-flex">
+              <tr>
+                <td>TYPE: <span class="colorBlueTxt">ROUND TRIP</span></td>
+                <td>LEVEL: <span class="colorBlueTxt">PREMIUM ECONOMY</span></td>
+              </tr>
+              <tr>
+                <td>PROVIDER: <span class="colorBlueTxt">P&O</span></td>
+                <td>GENDER: <span class="colorBlueTxt">ALL</span></td>
+              </tr>
+              <tr>
+                <td>COUNTRY: <span class="colorBlueTxt">BARBADOS</span></td>
+                <td>EMAIL: <span class="colorBlueTxt">EXAMPLE@EXAMPLE.COM</span></td>
+              </tr>
+              <tr>
+                <td>STATUS: <span class="colorBlueTxt">BOARDING</span></td>
+                <td>PERFORMANCE: <span class="colorBlueTxt">8+</span></td>
+              </tr>
+            </table>
+            <button type="submit" class="btn colorBlue px-2 py-0 my-2"><i class="fas fa-envelope"></i> APPLY</button>
+            <div class="text-wrap text-center shadow p-1 my-1 font-weight-bolder">
+              <span><i class="fas fa-phone font-weight-bolder colorBlueTxt"></i></span>TEL: <span><i class="fas fa-car font-weight-bolder colorBlueTxt"></i></span>SMOKING: YES <span><i class="fas fa-desktop font-weight-bolder colorBlueTxt"></i></span>WEBSITE: EXAMPLE.COM |<span><i class="fas fa-user-friends font-weight-bolder colorBlueTxt"></i></span>GUESTS ENROLLED: <span class="colorBlueTxt font-weight-bolder">2900</span> |<span><i class="fas fa-money-bill font-weight-bolder colorBlueTxt"></i></span>CUSTOMER SUPPORT: <span class="colorBlueTxt font-weight-bolder">YES</span>
+            </div>
+            <figure class="text-wrap text-center p-1 my-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis voluptate aliquid itaque tempore laborum perspiciatis ipsum optio cumque inventore reiciendis quaerat ducimus, id ad? Nostrum maiores saepe soluta unde!
+            </figure>
+            <figure class="colorLightGray py-5 px-3">
+              <a href="#" class="text-decoration-none colorBlkTxt">
+                <h2 class="text-center display-5"><i class="fas fa-mouse-pointer colorBlueTxt"></i> CLICK TO VIEW MORE DETAILS.</h2>
+              </a>
+            </figure>
+            <h4 class=" titles mt-2 mb-4 text-center text-danger"><span><i class="fas fa-bullseye font-weight-bolder text-danger"></i></span>MAP DIRECTIONS:</h4>
+          </div>
+          <figure class="container d-flex justify-content-center">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124357.48026120245!2d-59.684695341796875!3d13.088330400000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c43f7012ce9b103%3A0x5ce05cca6ba748a!2sCarlisle%20Bay!5e0!3m2!1sen!2suk!4v1612339019838!5m2!1sen!2suk" width="600" height="450" title="barbados" aria-hidden="false" tabindex="0"></iframe>
+          </figure>
+        </section>
+
+        <hr>
+
+        <!-- Results 3 -->
+        <section class="d-flex my-5 mx-auto row container-lg">
+          <div class="col-12">
+            <h4 class=" titles mt-2 text-danger">CRUISE TO CARIBBEAN: ST KITTS</h4>
+            <table class="text-center mb-3 table-responsive display-5 text-wrap font-weight-bolder shadow table-sm justify-content-md-center d-flex">
+              <tr>
+                <td>TYPE: <span class="colorBlueTxt">ONE WAY</span></td>
+                <td>LEVEL: <span class="colorBlueTxt">LUXURY</span></td>
+              </tr>
+              <tr>
+                <td>PROVIDER: <span class="colorBlueTxt">NORWEGIAN CRUISES</span></td>
+                <td>GENDER: <span class="colorBlueTxt">ALL</span></td>
+              </tr>
+              <tr>
+                <td>COUNTRY: <span class="colorBlueTxt">ST KITTS</span></td>
+                <td>EMAIL: <span class="colorBlueTxt">EXAMPLE@EXAMPLE.COM</span></td>
+              </tr>
+              <tr>
+                <td>STATUS: <span class="colorBlueTxt">BOARDING</span></td>
+                <td>PERFORMANCE: <span class="colorBlueTxt">6</span></td>
+              </tr>
+            </table>
+            <button type="submit" class="btn colorBlue px-2 py-0 my-2"><i class="fas fa-envelope"></i> APPLY</button>
+            <div class="text-wrap text-center shadow p-1 my-1 font-weight-bolder">
+              <span><i class="fas fa-phone font-weight-bolder colorBlueTxt"></i></span>TEL: <span><i class="fas fa-car font-weight-bolder colorBlueTxt"></i></span>SMOKING: YES <span><i class="fas fa-desktop font-weight-bolder colorBlueTxt"></i></span>WEBSITE: EXAMPLE.COM |<span><i class="fas fa-user-friends font-weight-bolder colorBlueTxt"></i></span>GUESTS ENROLLED: <span class="colorBlueTxt font-weight-bolder">1500</span> |<span><i class="fas fa-money-bill font-weight-bolder colorBlueTxt"></i></span>CUSTOMER SUPPORT: <span class="colorBlueTxt font-weight-bolder">YES</span>
+            </div>
+            <figure class="text-wrap text-center p-1 my-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis voluptate aliquid itaque tempore laborum perspiciatis ipsum optio cumque inventore reiciendis quaerat ducimus, id ad? Nostrum maiores saepe soluta unde!
+            </figure>
+            <figure class="colorLightGray py-5 px-3">
+              <a href="#" class="text-decoration-none colorBlkTxt">
+                <h2 class="text-center display-5"><i class="fas fa-mouse-pointer colorBlueTxt"></i> CLICK TO VIEW MORE DETAILS.</h2>
+              </a>
+            </figure>
+            <h4 class=" titles mt-2 mb-4 text-center text-danger"><span><i class="fas fa-bullseye font-weight-bolder text-danger"></i></span>MAP DIRECTIONS:</h4>
+          </div>
+          <figure class="container d-flex justify-content-center">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121887.98423396755!2d-62.81300747802623!3d17.315572914383665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c121bf30776af51%3A0xf947511553cd8445!2sPort%20Zante%20Marina!5e0!3m2!1sen!2suk!4v1612339789971!5m2!1sen!2suk" width="600" height="450" title="stkitts" aria-hidden="false" tabindex="0"></iframe>
+          </figure>
+        </section>
+
+        <hr>
+
+        <!-- Results 4 -->
+        <section class="d-flex my-5 mx-auto row container-lg">
+          <div class="col-12">
+            <h4 class=" titles mt-2 text-danger">CRUISE TO CARIBBEAN: ST LUCIA</h4>
+            <table class="text-center mb-3 table-responsive display-5 text-wrap font-weight-bolder shadow table-sm justify-content-md-center d-flex">
+              <tr>
+                <td>TYPE: <span class="colorBlueTxt">ROUND TRIP</span></td>
+                <td>LEVEL: <span class="colorBlueTxt">PREMIUM ECONOMY</span></td>
+              </tr>
+              <tr>
+                <td>PROVIDER: <span class="colorBlueTxt">PRINCESS</span></td>
+                <td>GENDER: <span class="colorBlueTxt">ALL</span></td>
+              </tr>
+              <tr>
+                <td>COUNTRY: <span class="colorBlueTxt">ST LUCIA</span></td>
+                <td>EMAIL: <span class="colorBlueTxt">EXAMPLE@EXAMPLE.COM</span></td>
+              </tr>
+              <tr>
+                <td>STATUS: <span class="colorBlueTxt">NOT BOARDING</span></td>
+                <td>PERFORMANCE: <span class="colorBlueTxt">9+</span></td>
+              </tr>
+            </table>
+            <button type="submit" class="btn colorBlue px-2 py-0 my-2"><i class="fas fa-envelope"></i> APPLY</button>
+            <div class="text-wrap text-center shadow p-1 my-1 font-weight-bolder">
+              <span><i class="fas fa-phone font-weight-bolder colorBlueTxt"></i></span>TEL: <span><i class="fas fa-car font-weight-bolder colorBlueTxt"></i></span>SMOKING: YES <span><i class="fas fa-desktop font-weight-bolder colorBlueTxt"></i></span>WEBSITE: EXAMPLE.COM |<span><i class="fas fa-user-friends font-weight-bolder colorBlueTxt"></i></span>GUESTS ENROLLED: <span class="colorBlueTxt font-weight-bolder">4500</span> |<span><i class="fas fa-money-bill font-weight-bolder colorBlueTxt"></i></span>CUSTOMER SUPPORT: <span class="colorBlueTxt font-weight-bolder">YES</span>
+            </div>
+            <figure class="text-wrap text-center p-1 my-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis voluptate aliquid itaque tempore laborum perspiciatis ipsum optio cumque inventore reiciendis quaerat ducimus, id ad? Nostrum maiores saepe soluta unde!
+            </figure>
+            <figure class="colorLightGray py-5 px-3">
+              <a href="#" class="text-decoration-none colorBlkTxt">
+                <h2 class="text-center display-5"><i class="fas fa-mouse-pointer colorBlueTxt"></i> CLICK TO VIEW MORE DETAILS.</h2>
+              </a>
+            </figure>
+            <h4 class=" titles mt-2 mb-4 text-center text-danger"><span><i class="fas fa-bullseye font-weight-bolder text-danger"></i></span>MAP DIRECTIONS:</h4>
+          </div>
+          <figure class="container d-flex justify-content-center">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123901.05893055472!2d-61.07351601401494!3d13.96407602066243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c40898335dff3e3%3A0x309e3bd42181da61!2sSt%20Lucia%20Cruise%20Ship%20Tours!5e0!3m2!1sen!2suk!4v1612339863681!5m2!1sen!2suk" width="600" height="450" title="stlucia" aria-hidden="false" tabindex="0"></iframe>
+          </figure>
+        </section>
+
+        <!-- Results 5 -->
+        <section class="d-flex my-5 mx-auto row container-lg">
+          <div class="col-12">
+            <h4 class=" titles mt-2 text-danger">CRUISE TO CARIBBEAN: CUBA</h4>
+            <table class="text-center mb-3 table-responsive display-5 text-wrap font-weight-bolder shadow table-sm justify-content-md-center d-flex">
+              <tr>
+                <td>TYPE: <span class="colorBlueTxt">ROUND TRIP</span></td>
+                <td>LEVEL: <span class="colorBlueTxt">PREMIUM</span></td>
+              </tr>
+              <tr>
+                <td>PROVIDER: <span class="colorBlueTxt">CELEBRITY CRUISES</span></td>
+                <td>GENDER: <span class="colorBlueTxt">ALL</span></td>
+              </tr>
+              <tr>
+                <td>COUNTRY: <span class="colorBlueTxt">CUBA</span></td>
+                <td>EMAIL: <span class="colorBlueTxt">EXAMPLE@EXAMPLE.COM</span></td>
+              </tr>
+              <tr>
+                <td>STATUS: <span class="colorBlueTxt">BOARDING</span></td>
+                <td>PERFORMANCE: <span class="colorBlueTxt">9+</span></td>
+              </tr>
+            </table>
+            <button type="submit" class="btn colorBlue px-2 py-0 my-2"><i class="fas fa-envelope"></i> APPLY</button>
+            <div class="text-wrap text-center shadow p-1 my-1 font-weight-bolder">
+              <span><i class="fas fa-phone font-weight-bolder colorBlueTxt"></i></span>TEL: <span><i class="fas fa-car font-weight-bolder colorBlueTxt"></i></span>SMOKING: YES <span><i class="fas fa-desktop font-weight-bolder colorBlueTxt"></i></span>WEBSITE: EXAMPLE.COM |<span><i class="fas fa-user-friends font-weight-bolder colorBlueTxt"></i></span>GUESTS ENROLLED: <span class="colorBlueTxt font-weight-bolder">1400</span> |<span><i class="fas fa-money-bill font-weight-bolder colorBlueTxt"></i></span>CUSTOMER SUPPORT: <span class="colorBlueTxt font-weight-bolder">YES</span>
+            </div>
+            <figure class="text-wrap text-center p-1 my-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis voluptate aliquid itaque tempore laborum perspiciatis ipsum optio cumque inventore reiciendis quaerat ducimus, id ad? Nostrum maiores saepe soluta unde!
+            </figure>
+            <figure class="colorLightGray py-5 px-3">
+              <a href="#" class="text-decoration-none colorBlkTxt">
+                <h2 class="text-center display-5"><i class="fas fa-mouse-pointer colorBlueTxt"></i> CLICK TO VIEW MORE DETAILS.</h2>
+              </a>
+            </figure>
+            <h4 class=" titles mt-2 mb-4 text-center text-danger"><span><i class="fas fa-bullseye font-weight-bolder text-danger"></i></span>MAP DIRECTIONS:</h4>
+          </div>
+          <figure class="container d-flex justify-content-center">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7604407.269266544!2d-84.07074575679651!3d21.46500512598581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88cd79b3c787cd33%3A0x8aa2a493add8a730!2sCruise%20Terminal%20Havana!5e0!3m2!1sen!2suk!4v1612339940077!5m2!1sen!2suk" width="600" height="450" title="cuba" aria-hidden="false" tabindex="0"></iframe>
+          </figure>
+        </section>
+
+        <hr>
+
+        <!-- Results 6 -->
+        <section class="d-flex my-5 mx-auto row container-lg">
+          <div class="col-12">
+            <h4 class=" titles mt-2 text-danger">CRUISE TO CARIBBEAN: GRENADA</h4>
+            <table class="text-center mb-3 table-responsive display-5 text-wrap font-weight-bolder shadow table-sm justify-content-md-center d-flex">
+              <tr>
+                <td>TYPE: <span class="colorBlueTxt">SPLIT</span></td>
+                <td>LEVEL: <span class="colorBlueTxt">PREMIUM ECONOMY</span></td>
+              </tr>
+              <tr>
+                <td>PROVIDER: <span class="colorBlueTxt">CELEBRITY CRUISES</span></td>
+                <td>GENDER: <span class="colorBlueTxt">ALL</span></td>
+              </tr>
+              <tr>
+                <td>COUNTRY: <span class="colorBlueTxt">GRENADA</span></td>
+                <td>EMAIL: <span class="colorBlueTxt">EXAMPLE@EXAMPLE.COM</span></td>
+              </tr>
+              <tr>
+                <td>STATUS: <span class="colorBlueTxt">BOARDING</span></td>
+                <td>PERFORMANCE: <span class="colorBlueTxt">7+</span></td>
+              </tr>
+            </table>
+            <button type="submit" class="btn colorBlue px-2 py-0 my-2"><i class="fas fa-envelope"></i> APPLY</button>
+            <div class="text-wrap text-center shadow p-1 my-1 font-weight-bolder">
+              <span><i class="fas fa-phone font-weight-bolder colorBlueTxt"></i></span>TEL: <span><i class="fas fa-car font-weight-bolder colorBlueTxt"></i></span>SMOKING: NO <span><i class="fas fa-desktop font-weight-bolder colorBlueTxt"></i></span>WEBSITE: EXAMPLE.COM |<span><i class="fas fa-user-friends font-weight-bolder colorBlueTxt"></i></span>GUESTS ENROLLED: <span class="colorBlueTxt font-weight-bolder">1300</span> |<span><i class="fas fa-money-bill font-weight-bolder colorBlueTxt"></i></span>CUSTOMER SUPPORT: <span class="colorBlueTxt font-weight-bolder">YES</span>
+            </div>
+            <figure class="text-wrap text-center p-1 my-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis voluptate aliquid itaque tempore laborum perspiciatis ipsum optio cumque inventore reiciendis quaerat ducimus, id ad? Nostrum maiores saepe soluta unde!
+            </figure>
+            <figure class="colorLightGray py-5 px-3">
+              <a href="#" class="text-decoration-none colorBlkTxt">
+                <h2 class="text-center display-5"><i class="fas fa-mouse-pointer colorBlueTxt"></i> CLICK TO VIEW MORE DETAILS.</h2>
+              </a>
+            </figure>
+            <h4 class=" titles mt-2 mb-4 text-center text-danger"><span><i class="fas fa-bullseye font-weight-bolder text-danger"></i></span>MAP DIRECTIONS:</h4>
+          </div>
+          <figure class="container d-flex justify-content-center">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499047.19705648255!2d-61.87256196622716!3d12.261388609895842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c382194bd5d20f1%3A0x6bfaa4879f915ac9!2sGrenada%20Cruise%20Terminal!5e0!3m2!1sen!2suk!4v1612340004293!5m2!1sen!2suk" width="600" height="450" title="grenada" aria-hidden="false" tabindex="0"></iframe>
+          </figure>
+        </section>
+
+        <hr>
+
+        <!-- Results 7 -->
+        <section class="d-flex my-5 mx-auto row container-lg">
+          <div class="col-12">
+            <h4 class=" titles mt-2 text-danger">CRUISE TO CARIBBEAN: TRINIDAD & TOBAGO</h4>
+            <table class="text-center mb-3 table-responsive display-5 text-wrap font-weight-bolder shadow table-sm justify-content-md-center d-flex">
+              <tr>
+                <td>TYPE: <span class="colorBlueTxt">ROUND TRIP</span></td>
+                <td>LEVEL: <span class="colorBlueTxt">LUXURY/SELF-CATERED</span></td>
+              </tr>
+              <tr>
+                <td>PROVIDER: <span class="colorBlueTxt">NORWEGIAN CRUISES</span></td>
+                <td>GENDER: <span class="colorBlueTxt">ALL</span></td>
+              </tr>
+              <tr>
+                <td>COUNTRY: <span class="colorBlueTxt">TRINIDAD</span></td>
+                <td>EMAIL: <span class="colorBlueTxt">EXAMPLE@EXAMPLE.COM</span></td>
+              </tr>
+              <tr>
+                <td>STATUS: <span class="colorBlueTxt">BOARDING</span></td>
+                <td>PERFORMANCE: <span class="colorBlueTxt">8+</span></td>
+              </tr>
+            </table>
+            <button type="submit" class="btn colorBlue px-2 py-0 my-2"><i class="fas fa-envelope"></i> APPLY</button>
+            <div class="text-wrap text-center shadow p-1 my-1 font-weight-bolder">
+              <span><i class="fas fa-phone font-weight-bolder colorBlueTxt"></i></span>TEL: <span><i class="fas fa-car font-weight-bolder colorBlueTxt"></i></span>SMOKING: YES <span><i class="fas fa-desktop font-weight-bolder colorBlueTxt"></i></span>WEBSITE: EXAMPLE.COM |<span><i class="fas fa-user-friends font-weight-bolder colorBlueTxt"></i></span>GUESTS ENROLLED: <span class="colorBlueTxt font-weight-bolder">2000</span> |<span><i class="fas fa-money-bill font-weight-bolder colorBlueTxt"></i></span>CUSTOMER SUPPORT: <span class="colorBlueTxt font-weight-bolder">YES</span>
+            </div>
+            <figure class="text-wrap text-center p-1 my-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis voluptate aliquid itaque tempore laborum perspiciatis ipsum optio cumque inventore reiciendis quaerat ducimus, id ad? Nostrum maiores saepe soluta unde!
+            </figure>
+            <figure class="colorLightGray py-5 px-3">
+              <a href="#" class="text-decoration-none colorBlkTxt">
+                <h2 class="text-center display-5"><i class="fas fa-mouse-pointer colorBlueTxt"></i> CLICK TO VIEW MORE DETAILS.</h2>
+              </a>
+            </figure>
+            <h4 class=" titles mt-2 mb-4 text-center text-danger"><span><i class="fas fa-bullseye font-weight-bolder text-danger"></i></span>MAP DIRECTIONS:</h4>
+          </div>
+          <figure class="container d-flex justify-content-center">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1003636.8056540593!2d-61.77633050223787!3d10.69924704266178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c36084183bfaf9f%3A0x8acf8f171b9ecff8!2sCarvalho&#39;s%20Cruise%20Services%20Limited!5e0!3m2!1sen!2suk!4v1612340070071!5m2!1sen!2suk" width="600" height="450" title="trinidad" aria-hidden="false" tabindex="0"></iframe>
+          </figure>
+        </section>
+
+        <hr>
+
+        <!-- Results 8 -->
+        <section class="d-flex my-5 mx-auto row container-lg">
+          <div class="col-12">
+            <h4 class=" titles mt-2 text-danger">CRUISE TO CARIBBEAN: DOMINICA</h4>
+            <table class="text-center mb-3 table-responsive display-5 text-wrap font-weight-bolder shadow table-sm justify-content-md-center d-flex">
+              <tr>
+                <td>TYPE: <span class="colorBlueTxt">ROUND TRIP</span></td>
+                <td>LEVEL: <span class="colorBlueTxt">PREMIUM ECONOMY</span></td>
+              </tr>
+              <tr>
+                <td>PROVIDER: <span class="colorBlueTxt">PRINCESS</span></td>
+                <td>GENDER: <span class="colorBlueTxt">ALL</span></td>
+              </tr>
+              <tr>
+                <td>COUNTRY: <span class="colorBlueTxt">DOMINICA</span></td>
+                <td>EMAIL: <span class="colorBlueTxt">EXAMPLE@EXAMPLE.COM</span></td>
+              </tr>
+              <tr>
+                <td>STATUS: <span class="colorBlueTxt">BOARDING</span></td>
+                <td>PERFORMANCE: <span class="colorBlueTxt">6+</span></td>
+              </tr>
+            </table>
+            <button type="submit" class="btn colorBlue px-2 py-0 my-2"><i class="fas fa-envelope"></i> APPLY</button>
+            <div class="text-wrap text-center shadow p-1 my-1 font-weight-bolder">
+              <span><i class="fas fa-phone font-weight-bolder colorBlueTxt"></i></span>TEL: <span><i class="fas fa-car font-weight-bolder colorBlueTxt"></i></span>SMOKING: YES <span><i class="fas fa-desktop font-weight-bolder colorBlueTxt"></i></span>WEBSITE: EXAMPLE.COM |<span><i class="fas fa-user-friends font-weight-bolder colorBlueTxt"></i></span>GUESTS ENROLLED: <span class="colorBlueTxt font-weight-bolder">4000</span> |<span><i class="fas fa-money-bill font-weight-bolder colorBlueTxt"></i></span>CUSTOMER SUPPORT: <span class="colorBlueTxt font-weight-bolder">YES</span>
+            </div>
+            <figure class="text-wrap text-center p-1 my-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis voluptate aliquid itaque tempore laborum perspiciatis ipsum optio cumque inventore reiciendis quaerat ducimus, id ad? Nostrum maiores saepe soluta unde!
+            </figure>
+            <figure class="colorLightGray py-5 px-3">
+              <a href="#" class="text-decoration-none colorBlkTxt">
+                <h2 class="text-center display-5"><i class="fas fa-mouse-pointer colorBlueTxt"></i> CLICK TO VIEW MORE DETAILS.</h2>
+              </a>
+            </figure>
+            <h4 class=" titles mt-2 mb-4 text-center text-danger"><span><i class="fas fa-bullseye font-weight-bolder text-danger"></i></span>MAP DIRECTIONS:</h4>
+          </div>
+          <figure class="container d-flex justify-content-center">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d246360.05660337355!2d-61.51351858359375!3d15.247283900000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c152af8b2075845%3A0x93e857b25e981a82!2sChampagne%20Reef!5e0!3m2!1sen!2suk!4v1612340117214!5m2!1sen!2suk" width="600" height="450" title="dominica" aria-hidden="false" tabindex="0"></iframe>
+          </figure>
+        </section>
+
+        <!-- Results 9 -->
+        <section class="d-flex my-5 mx-auto row container-lg">
+          <div class="col-12">
+            <h4 class=" titles mt-2 text-danger">CRUISE TO CARIBBEAN: HAITI</h4>
+            <table class="text-center mb-3 table-responsive display-5 text-wrap font-weight-bolder shadow table-sm justify-content-md-center d-flex">
+              <tr>
+                <td>TYPE: <span class="colorBlueTxt">ROUND TRIP</span></td>
+                <td>LEVEL: <span class="colorBlueTxt">ECONOMY</span></td>
+              </tr>
+              <tr>
+                <td>PROVIDER: <span class="colorBlueTxt">NORWEGIAN CRUISES</span></td>
+                <td>GENDER: <span class="colorBlueTxt">ALL</span></td>
+              </tr>
+              <tr>
+                <td>COUNTRY: <span class="colorBlueTxt">DOMINICA</span></td>
+                <td>EMAIL: <span class="colorBlueTxt">EXAMPLE@EXAMPLE.COM</span></td>
+              </tr>
+              <tr>
+                <td>STATUS: <span class="colorBlueTxt">NOT BOARDING</span></td>
+                <td>PERFORMANCE: <span class="colorBlueTxt">6+</span></td>
+              </tr>
+            </table>
+            <button type="submit" class="btn colorBlue px-2 py-0 my-2"><i class="fas fa-envelope"></i> APPLY</button>
+            <div class="text-wrap text-center shadow p-1 my-1 font-weight-bolder">
+              <span><i class="fas fa-phone font-weight-bolder colorBlueTxt"></i></span>TEL: <span><i class="fas fa-car font-weight-bolder colorBlueTxt"></i></span>SMOKING: YES <span><i class="fas fa-desktop font-weight-bolder colorBlueTxt"></i></span>WEBSITE: EXAMPLE.COM |<span><i class="fas fa-user-friends font-weight-bolder colorBlueTxt"></i></span>GUESTS ENROLLED: <span class="colorBlueTxt font-weight-bolder">2500</span> |<span><i class="fas fa-money-bill font-weight-bolder colorBlueTxt"></i></span>CUSTOMER SUPPORT: <span class="colorBlueTxt font-weight-bolder">YES</span>
+            </div>
+            <figure class="text-wrap text-center p-1 my-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis voluptate aliquid itaque tempore laborum perspiciatis ipsum optio cumque inventore reiciendis quaerat ducimus, id ad? Nostrum maiores saepe soluta unde!
+            </figure>
+            <figure class="colorLightGray py-5 px-3">
+              <a href="#" class="text-decoration-none colorBlkTxt">
+                <h2 class="text-center display-5"><i class="fas fa-mouse-pointer colorBlueTxt"></i> CLICK TO VIEW MORE DETAILS.</h2>
+              </a>
+            </figure>
+            <h4 class=" titles mt-2 mb-4 text-center text-danger"><span><i class="fas fa-bullseye font-weight-bolder text-danger"></i></span>MAP DIRECTIONS:</h4>
+          </div>
+          <figure class="container d-flex justify-content-center">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7884798.841713005!2d-65.88276415779855!3d15.213197334063407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eb6c0b661e6d6cd%3A0xeeee7c060c5978fe!2sLabadee%20Cruise%20Ship%20Docks!5e0!3m2!1sen!2suk!4v1612340240269!5m2!1sen!2suk" width="600" height="450" title="haiti" aria-hidden="false" tabindex="0"></iframe>
+          </figure>
+        </section>
+
+        
+
+          
+    <!-- Nav footer -->
+    <footer class="p-3 row justify-content-center colorBlack mx-auto">
+      <!-- Nav1 -->
+      <ul class="nav text-center justify-content-center flex-sm-row col-12 col-md-5 border-bottom border-top titles pt-2">
+          <li class="nav-item">
+              <a href="" class="nav-link text-white">HOME</a>
+          </li>
+          <li class="nav-item">
+              <a href="" class="nav-link text-white">SEARCH</a>
+          </li>
+          <li class="nav-item">
+              <a href="" class="nav-link text-white">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+              <a href="" class="nav-link text-white">ADVERTISE</a>
+          </li>
+      </ul>
+      <!-- Icon -->
+      <div class="nav text-center justify-content-center flex-sm-row col-12 col-md-1 border-bottom border-top titles">
+          <i class="far footerMap fa-map-marker-alt rounded-circle"></i>
+      </div>
+      <!-- Nav2 -->
+      <ul class="nav text-center justify-content-center flex-sm-row col-12 col-md-5 border-bottom border-top titles pt-2">
+          <li class="nav-item">
+              <a href="" class="nav-link text-white">FACEBOOK</a>
+          </li>
+          <li class="nav-item">
+              <a href="" class="nav-link text-white">TWITTER</a>
+          </li>
+          <li class="nav-item">
+              <a href="" class="nav-link text-white">BLOG</a>
+          </li>
+          <li class="nav-item">
+              <a href="" class="nav-link text-white">GOOGLE+</a>
+          </li>
+      </ul>
+     </footer>
+  
+     <!-- Lower Nav -->
+     <footer class="row colorBlack mx-auto">
+          <form action="./index.html" class="col-8 col-sm-4 col-md-4 form-inline py-3 mx-auto">
+              <div class="form-group mx-1 mb-2 d-md-inline-flex">
+                  <label class="mr-3 titles3 text-white d-flex justify-content-center">SUBSCRIBE</label>
+                  <div class="d-inline-flex">
+                      <input type="email" class="form-control rounded-0 colorBlack titles3 border-secondary d-none d-lg-block inputSubscribe" placeholder="your@example.com">
+                      <input type="email" class="form-control rounded-0 colorBlack titles3 border-secondary d-none d-md-block d-lg-none w-25 inputSubscribe" placeholder="your@example.com">
+                      <input type="email" class="form-control rounded-0 colorBlack titles3 border-secondary d-block d-sm-none w-100 inputSubscribe" placeholder="your@example.com">
+                      <button type="submit" class="btn btn-secondary rounded-0 titles smaller">send</button>
+                  </div>
+                </div>
+          </form>
+          <div class="col-12 col-md-5 form-inline py-3 mx-auto justify-content-center">
+              <div class="mx-1 mb-2 d-md-inline-flex">
+                  <label class="mr-3 titles3 text-white d-flex justify-content-center">CONTACT</label>
+                  <div class="d-inline-flex smaller">
+                      <div class="colorGrayTxt titles3 smaller mt-2">Have a question or submission? <br>
+                      <h6 class="text-danger titles3 text-muted">emkay1993@gmail.com</h6>
+                      </div>
+                  </div>
+                </div>
+          </div>
+          <div class="col-12 col-md-3 form-inline py-3 mx-auto justify-content-center">
+              <div class="mx-1 mb-2 d-md-inline-flex">
+                  <label class="mr-3 titles text-white d-flex justify-content-center">ABOUT</label>
+                  <div class="d-inline-flex smaller">
+                      <div class="colorGrayTxt titles3 caption-text mt-2">MarcGrant Designs &copy;<br>
+                      <h6 class="text-danger titles3 smaller">MarcGrant.com</h6>
+                      </div>
+                  </div>
+                </div>
+          </div>
+     </footer>
+    
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script>
+      $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+</body>
+</html>

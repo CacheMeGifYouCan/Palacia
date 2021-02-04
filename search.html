@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="./assets/logo_dark.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
+    <!-- Our CSS -->
+    <link rel="stylesheet" href="./style.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    
+    <!-- Adobe Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/ywp6adv.css" crossorigin="anonymous">
+
+    <title> Palacia</title>
+</head>
+<body>
+    <!-- NavBar -->
+    <header>
+        <nav id="mainNavbar" class="navbar navbar-hide navbar-expand-md p-2 fixed-top colorMain">
+                <!-- Mobile Logo -->
+                <a class="navbar-brand my-1 d-md-none d-flex col-12 justify-content-center" href="./index.html">
+                  <img src="./assets/logo_white.png" width="50" height="50" alt="">
+                  <h3 class="mb-0 d-inline colorMain titles2 font-weight-bold">palacia</h3>
+                </a>
+                
+                <!-- Mobile Icons -->
+                <div class="col-12 d-sm-none d-flex justify-content-center">
+                    <span>
+                        <a href="#" title="searchlink">
+                            <i class="fas fa-search font-weight-bold colorMain"></i>
+                        </a>
+                        <a href="./login.html" title="userlink">
+                            <i class="far fa-user colorMain"></i>
+                        </a>
+                        <a href="./login.html" title="rsslink">
+                            <i class="fas fa-rss colorMain"></i>
+                        </a>
+                        <a href="./login.html" title="twitterlink">
+                            <i class="fab fa-twitter colorMain"></i>
+                        </a>
+                        <button type="submit" class="navbar-toggler navbar-light" title="none" data-toggle="collapse" data-target="#navbarSupportedContent">
+                            <span id="navtoggler" class="text-white"><i class="fas fa-bars"></i></span>
+                        </button>
+                    </span>
+                </div>
+
+                <!-- Collapsed Desktop Nav -->
+            <div class="collapse navbar-collapse d-md-inline-flex justify-content-between" id="navbarSupportedContent">
+                <!-- DesKtop -->
+                <a class="navbar-brand my-1 d-none d-md-inline" href="./index.html">
+                    <img id="logo" src="./assets/logo_white.png" width="70" height="70" class="img-fluid justify-self-start ml-2" alt="brandlogo">
+                  </a>
+              <ul id="navLinks" class="navbar-nav text-primary">
+                <li>
+                  <a href="./search.html" title="searchlink">
+                      <i class="fas fa-search colorMain d-none d-md-block"></i>
+                  </a>
+                </li>
+                <li class="nav-item active" data-toggle="collapse"  data-target=".navbar-collapse.show">
+                  <a class="nav-link text-white font-weight-bold" href="#">CRUISES <span class="sr-only">(current)</span></a>
+                </li>
+                <li>
+                    <a href="./login.html" title="userlink">
+                        <i class="far fa-user colorMain d-none d-md-block"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white font-weight-bolder" href="#">
+                    ABOUT
+                  </a>
+                </li>
+                <li>
+                    <a href="#" title="rsslink">
+                        <i class="fas fa-rss colorMain d-none d-md-block"></i>
+                    </a>
+                </li>
+                <li class="nav-item" data-toggle="collapse"  data-target=".navbar-collapse.show">
+                    <a class="nav-link text-white font-weight-bolder" href="#">BLOG</a>
+                  </li>
+            </ul>
+            </div>
+          </nav>
+        </header>
+
+        <!-- Search Form -->
+        <section class="mt-5 colorMain" id="searchForm">
+          <form action="./moredetails.html" method="POST" id="formContainer" class="text-white titles font-weight-bold colorLightGray">
+            <div class="form-group mx-auto mt-4">
+              <label for="cruisename" class="colorBlkTxt">NAME:*</label>
+              <input type="text" name="cruisename" id="cruisename" class="form-control">
+            </div>
+            <div class="form-group mx-auto mt-4">
+              <label for="countries" class="colorBlkTxt">COUNTRY:</label>
+              <select name="countries" id="countries" class="form-control">
+                <option value="">Antigua and Barbuda</option>
+                <option value="">Bahamas</option>
+                <option value="">Barbados</option>
+                <option value="">Cuba</option>
+                <option value="">Dominica</option>
+                <option value="">Dominican Republic</option>
+                <option value="">Grenada</option>
+                <option value="">Haiti</option>
+                <option value="">Jamaica</option>
+                <option value="">Saint Kitts and Nevis</option>
+                <option value="">Saint Lucia</option>
+                <option value="">Saint Vincent and the Grenadines</option>
+                <option value="">Trindidad and Tobago</option>
+              </select>
+            </div>
+            <div class="form-group mx-auto mt-4">
+              <label for="provider" class="colorBlkTxt">PROVIDER:</label>
+              <select name="provider" id="provider" class="form-control">
+                <option value="">P&O</option>
+                <option value="">Norwegian Cruises</option>
+                <option value="">Royal Carribean</option>
+                <option value="">Oceania</option>
+                <option value="">Princess</option>
+                <option value="">Celebrity Cruises</option>
+                <option value="">Planet Cruise</option>
+              </select>
+            </div>
+            <div class="form-group mx-auto mt-4">
+              <label for="length" class="colorBlkTxt">DAYS:</label>
+              <select name="length" id="length" class="form-control">
+                <option value="">5 Days</option>
+                <option value="">7 Days</option>
+                <option value="">9 Days</option>
+                <option value="">12 Days</option>
+                <option value="">14 Days</option>
+                <option value="">21 Days</option>
+                <option value="">More</option>
+              </select>
+            </div>
+            <div class="form-group mx-auto mt-4">
+              <label for="guests" class="colorBlkTxt">GUESTS:</label>
+              <select name="guests" id="guests" class="form-control">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7+</option>
+              </select>
+            </div>
+            <div class="form-group mx-auto mt-4">
+              <button type="submit" class="btn btn-sm btn-primary colorWhtTxt text-nowrap text-center titles2 font-weight-bold">Search</button>
+            </div>
+            <div class="form-group mx-5 mt-4">
+              <button type="submit" class="btn btn-sm btn-warning colorWhtTxt text-nowrap text-center titles2 font-weight-bold"><span>
+                <i class="far fa-edit"></i></span>clear filter</button>
+            </div>
+          </form>
+        </section>
+
+        <!-- Search Results -->
+        <h1 class="display-5 text-center container-fluid mx-auto my-4">
+          Search Results Found 9 Cruise(s).
+        </h1>
+
+        <!-- Search Results Section -->
+    <div id="searchResultsSecton" class="text-center container-fluid black">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 my-5">
+
+        <!-- Card 1 -->
+        <div class="col d-flex justify-content-center mb-3 shadow-sm">
+          <div class="card mb-3 text-left border-0" data-toggle="tooltip" data-placement="top" title="£1,682pp* | £120/night">
+            <div class="position-relative">
+              <a href="#" class="stretched-link">
+                <img
+                  src="./assets/Images/image_x_43.webp"
+                  alt="Error loading image"
+                  class="card-img-top border-0"
+                />
+              </a>
+              <div class="card-img-overlay">
+                <p class="card-text font-weight-bolder">
+                  <a href="#" class="text-warning"> RATING: <i class="fas fa-star mx-0"></i><i class="fas fa-star mx-0"></i><i class="fas fa-star mx-0"></i><i class="fas fa-star mx-0"></i><i class="fas fa-star mx-0"></i> </a>
+                </p>
+              </div>
+            </div>
+            <div class="body">
+              <a href="#" class="text-decoration-none">
+                <h4 class="card-title colorBlkTxt title3 font-weight-bold mt-2 smaller">
+                  Cruise to Caribbean
+                </h4>
+              </a>
+              <p class="card-text">
+                LEAVING: Barbados <br>
+                CRUISE LINE: Princess
+              </p>
+              <div>
+                <a href="./moredetails.html" class="btn btn-sm colorMain font-weight-bolder text-white">BOOK NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <!-- Card 2 -->
+         <div class="col d-flex justify-content-center mb-3 shadow-sm">
+          <div class="card mb-3 text-left border-0" data-toggle="tooltip" data-placement="top" title="£1,454pp* | £104/night">
+            <div class="position-relative">
+              <a href="#" class="stretched-link">
+                <img
+                  src="./assets/Images/image_x_43_2.webp"
+                  alt="Error loading image"
+                  class="card-img-top border-0"
+                />
+              </a>
+              <div class="card-img-overlay">
+                <p class="card-text font-weight-bolder">
+                  <a href="#" class="text-warning"> RATING: <i class="fas fa-star mx-0"></i><i class="fas fa-star mx-0"></i><i class="fas fa-star mx-0"></i><i class="fas fa-star mx-0"></i> </a>
+                </p>
+              </div>
+            </div>
+            <div class="body">
+              <a href="#" class="text-decoration-none">
+                <h4 class="card-title colorBlkTxt title3 font-weight-bold mt-2 smaller">
+                  Cruise to Caribbean
+                </h4>
+              </a>
+              <p class="card-text">
+                LEAVING: Fort Lauderdale <br>
+                CRUISE LINE: Celebrity Cruises
+              </p>
+              <div>
+                <a href="./moredetails.html" class="btn btn-sm colorMain font-weight-bolder text-white">BOOK NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col d-flex justify-content-center mb-3 shadow-sm">
+          <div class="card mb-3 text-left border-0" data-toggle="tooltip" data-placement="top" title="£3,009pp* | £116/night">
+            <div class="position-relative">
+              <a href="#" class="stretched-link">
+                <img
+                  src="./assets/Images/image_x_43_3.webp"
+                  alt="Error loading image"
+                  class="card-img-top border-0"
+                />
+              </a>
+              <div class="card-img-overlay">
+                <p class="card-text font-weight-bolder">
+                  <a href="#" class="text-warning"> RATING: <i class="fas fa-star mx-0"></i><i class="fas fa-star mx-0"></i><i class="fas fa-star mx-0"></i> </a>
+                </p>
+              </div>
+            </div>
+            <div class="body">
+              <a href="#" class="text-decoration-none">
+                <h4 class="card-title colorBlkTxt title3 font-weight-bold mt-2 smaller">
+                  Cruise to Caribbean
+                </h4>
+              </a>
+              <p class="card-text">
+                LEAVING: Barbados <br>
+                CRUISE LINE: P&O Cruises
+              </p>
+              <div>
+                <a href="./moredetails.html" class="btn btn-sm colorMain font-weight-bolder text-white">BOOK NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col d-flex justify-content-center mb-3 shadow-sm">
+          <div class="card mb-3 text-left border-0" data-toggle="tooltip" data-placement="top" title="£1,429pp* | £143/night">
+            <div class="position-relative">
+              <a href="#" class="stretched-link">
+                <img
+                  src="./assets/Images/image_x_43_4.webp"
+                  alt="Error loading image"
+                  class="card-img-top border-0"
+                />
+              </a>
+              <div class="card-img-overlay">
+                <p class="card-text font-weight-bolder">
+                  <a href="#" class="text-warning"> RATING: <i class="fas fa-star mx-0"></i><i class="fas fa-star mx-0"></i><i class="fas fa-star mx-0"></i><i class="fas fa-star mx-0"></i><i class="fas fa-star mx-0"></i> </a>
+                </p>
+              </div>
+            </div>
+            <div class="body">
+              <a href="#" class="text-decoration-none">
+                <h4 class="card-title colorBlkTxt title3 font-weight-bold mt-2 smaller">
+                  Cruise to Caribbean
+                </h4>
+              </a>
+              <p class="card-text">
+                LEAVING: New York <br>
+                CRUISE LINE: Norwegian Cruises
+              </p>
+              <div>
+                <a href="./moredetails.html" class="btn btn-sm colorMain font-weight-bolder text-white">BOOK NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col d-flex justify-content-center mb-3 shadow-sm">
+          <div class="card mb-3 text-left border-0" data-toggle="tooltip" data-placement="top" title="£1,249pp* | £89/night">
+            <div class="position-relative">
+              <a href="#" class="stretched-link">
+                <img
+                  src="./assets/Images/image_x_43_5.webp"
+                  alt="Error loading image"
+                  class="card-img-top border-0"
+                />
+              </a>
+              <div class="card-img-overlay">
+                <p class="card-text font-weight-bolder">
+                  <a href="#" class="text-warning"> RATING: <i class="fas fa-star mx-0"></i><i class="fas fa-star mx-0"></i><i class="fas fa-star mx-0"></i><i class="fas fa-star mx-0"></i> </a>
+                </p>
+              </div>
+            </div>
+            <div class="body">
+              <a href="#" class="text-decoration-none">
+                <h4 class="card-title colorBlkTxt title3 font-weight-bold mt-2 smaller">
+                  Cruise to Caribbean
+                </h4>
+              </a>
+              <p class="card-text">
+                LEAVING: Southampton <br>
+                CRUISE LINE: P&O
+              </p>
+              <div>
+                <a href="./moredetails.html" class="btn btn-sm colorMain font-weight-bolder text-white">BOOK NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <!-- Card 6 -->
+         <div class="col d-flex justify-content-center mb-3 shadow-sm">
+          <div class="card mb-3 text-left border-0" data-toggle="tooltip" data-placement="top" title="£1,249pp* | £89/night">
+            <div class="position-relative">
+              <a href="#" class="stretched-link">
+                <img
+                  src="./assets/Images/image_x_43_6.webp"
+                  alt="Error loading image"
+                  class="card-img-top border-0"
+                />
+              </a>
+              <div class="card-img-overlay">
+                <p class="card-text font-weight-bolder">
+                  <a href="#" class="text-warning"> RATING: <i class="fas fa-star mx-0"></i><i class="fas fa-star mx-0"></i><i class="fas fa-star mx-0"></i><i class="fas fa-star mx-0"></i> </a>
+                </p>
+              </div>
+            </div>
+            <div class="body">
+              <a href="#" class="text-decoration-none">
+                <h4 class="card-title colorBlkTxt title3 font-weight-bold mt-2 smaller">
+                  Cruise to Caribbean
+                </h4>
+              </a>
+              <p class="card-text">
+                LEAVING: Fort Lauderdale <br>
+                CRUISE LINE: Celebrity Cruises
+              </p>
+              <div>
+                <a href="./moredetails.html" class="btn btn-sm colorMain font-weight-bolder text-white">BOOK NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="col d-flex justify-content-center mb-3 shadow-sm">
+          <div class="card mb-3 text-left border-0" data-toggle="tooltip" data-placement="top" title="£1,259pp* | £140/night">
+            <div class="position-relative">
+              <a href="#" class="stretched-link">
+                <img
+                  src="./assets/Images/image_x_43_7.webp"
+                  alt="Error loading image"
+                  class="card-img-top border-0"
+                />
+              </a>
+              <div class="card-img-overlay">
+                <p class="card-text font-weight-bolder">
+                  <a href="#" class="text-warning"> RATING: <i class="fas fa-star mx-0"></i><i class="fas fa-star mx-0"></i><i class="fas fa-star mx-0"></i><i class="fas fa-star mx-0"></i> </a>
+                </p>
+              </div>
+            </div>
+            <div class="body">
+              <a href="#" class="text-decoration-none">
+                <h4 class="card-title colorBlkTxt title3 font-weight-bold mt-2 smaller">
+                  Cruise to Caribbean
+                </h4>
+              </a>
+              <p class="card-text">
+                LEAVING: Barbados <br>
+                CRUISE LINE: Oceania Cruises
+              </p>
+              <div>
+                <a href="./moredetails.html" class="btn btn-sm colorMain font-weight-bolder text-white">BOOK NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="col d-flex justify-content-center mb-3 shadow-sm">
+          <div class="card mb-3 text-left border-0" data-toggle="tooltip" data-placement="top" title="£1,929pp* | £161/night">
+            <div class="position-relative">
+              <a href="#" class="stretched-link">
+                <img
+                  src="./assets/Images/image_x_43.webp"
+                  alt="Error loading image"
+                  class="card-img-top border-0"
+                />
+              </a>
+              <div class="card-img-overlay">
+                <p class="card-text font-weight-bolder">
+                  <a href="#" class="text-warning"> RATING: <i class="fas fa-star mx-0"></i><i class="fas fa-star mx-0"></i><i class="fas fa-star mx-0"></i> </a>
+                </p>
+              </div>
+            </div>
+            <div class="body">
+              <a href="#" class="text-decoration-none">
+                <h4 class="card-title colorBlkTxt title3 font-weight-bold mt-2 smaller">
+                  Cruise to Caribbean
+                </h4>
+              </a>
+              <p class="card-text">
+                LEAVING: Tampa <br>
+                CRUISE LINE: Norwegian Cruises
+              </p>
+              <div>
+                <a href="./moredetails.html" class="btn btn-sm colorMain font-weight-bolder text-white">BOOK NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="col d-flex justify-content-center mb-3 shadow-sm">
+          <div class="card mb-3 text-left border-0" data-toggle="tooltip" data-placement="top" title="£376pp* | £125/night">
+            <div class="position-relative">
+              <a href="#" class="stretched-link">
+                <img
+                  src="./assets/Images/image_x_43_3.webp"
+                  alt="Error loading image"
+                  class="card-img-top border-0"
+                />
+              </a>
+              <div class="card-img-overlay">
+                <p class="card-text font-weight-bolder">
+                  <a href="#" class="text-warning"> RATING: <i class="fas fa-star mx-0"></i><i class="fas fa-star mx-0"></i><i class="fas fa-star mx-0"></i> </a>
+                </p>
+              </div>
+            </div>
+            <div class="body">
+              <a href="#" class="text-decoration-none">
+                <h4 class="card-title colorBlkTxt title3 font-weight-bold mt-2 smaller">
+                  Cruise to Caribbean
+                </h4>
+              </a>
+              <p class="card-text">
+                LEAVING: Tampa <br>
+                CRUISE LINE: Norwegian Cruises
+              </p>
+              <div>
+                <a href="./moredetails.html" class="btn btn-sm colorMain font-weight-bolder text-white">BOOK NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+          
+    <!-- Nav footer -->
+    <footer class="p-3 row justify-content-center colorBlack mx-auto">
+      <!-- Nav1 -->
+      <ul class="nav text-center justify-content-center flex-sm-row col-12 col-md-5 border-bottom border-top titles pt-2">
+          <li class="nav-item">
+              <a href="" class="nav-link text-white">HOME</a>
+          </li>
+          <li class="nav-item">
+              <a href="" class="nav-link text-white">SEARCH</a>
+          </li>
+          <li class="nav-item">
+              <a href="" class="nav-link text-white">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+              <a href="" class="nav-link text-white">ADVERTISE</a>
+          </li>
+      </ul>
+      <!-- Icon -->
+      <div class="nav text-center justify-content-center flex-sm-row col-12 col-md-1 border-bottom border-top titles">
+          <i class="far footerMap fa-map-marker-alt rounded-circle"></i>
+      </div>
+      <!-- Nav2 -->
+      <ul class="nav text-center justify-content-center flex-sm-row col-12 col-md-5 border-bottom border-top titles pt-2">
+          <li class="nav-item">
+              <a href="" class="nav-link text-white">FACEBOOK</a>
+          </li>
+          <li class="nav-item">
+              <a href="" class="nav-link text-white">TWITTER</a>
+          </li>
+          <li class="nav-item">
+              <a href="" class="nav-link text-white">BLOG</a>
+          </li>
+          <li class="nav-item">
+              <a href="" class="nav-link text-white">GOOGLE+</a>
+          </li>
+      </ul>
+     </footer>
+  
+     <!-- Lower Nav -->
+     <footer class="row colorBlack mx-auto">
+          <form action="./index.html" class="col-8 col-sm-4 col-md-4 form-inline py-3 mx-auto">
+              <div class="form-group mx-1 mb-2 d-md-inline-flex">
+                  <label class="mr-3 titles3 text-white d-flex justify-content-center">SUBSCRIBE</label>
+                  <div class="d-inline-flex">
+                      <input type="email" class="form-control rounded-0 colorBlack titles3 border-secondary d-none d-lg-block inputSubscribe" placeholder="your@example.com">
+                      <input type="email" class="form-control rounded-0 colorBlack titles3 border-secondary d-none d-md-block d-lg-none w-25 inputSubscribe" placeholder="your@example.com">
+                      <input type="email" class="form-control rounded-0 colorBlack titles3 border-secondary d-block d-sm-none w-100 inputSubscribe" placeholder="your@example.com">
+                      <button type="submit" class="btn btn-secondary rounded-0 titles smaller">send</button>
+                  </div>
+                </div>
+          </form>
+          <div class="col-12 col-md-5 form-inline py-3 mx-auto justify-content-center">
+              <div class="mx-1 mb-2 d-md-inline-flex">
+                  <label class="mr-3 titles3 text-white d-flex justify-content-center">CONTACT</label>
+                  <div class="d-inline-flex smaller">
+                      <div class="colorGrayTxt titles3 smaller mt-2">Have a question or submission? <br>
+                      <h6 class="text-danger titles3 text-muted">emkay1993@gmail.com</h6>
+                      </div>
+                  </div>
+                </div>
+          </div>
+          <div class="col-12 col-md-3 form-inline py-3 mx-auto justify-content-center">
+              <div class="mx-1 mb-2 d-md-inline-flex">
+                  <label class="mr-3 titles text-white d-flex justify-content-center">ABOUT</label>
+                  <div class="d-inline-flex smaller">
+                      <div class="colorGrayTxt titles3 caption-text mt-2">MarcGrant Designs &copy;<br>
+                      <h6 class="text-danger titles3 smaller">MarcGrant.com</h6>
+                      </div>
+                  </div>
+                </div>
+          </div>
+     </footer>
+
+    
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script>
+      $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+</body>
+</html>
