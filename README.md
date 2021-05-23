@@ -23,7 +23,7 @@
 
 👤 **Marcus**
 
-- GitHub: [@CatchMeIfYouCan](https://github.com/CacheMeGifYouCan)
+- GitHub: [@marcusal](https://github.com/marcusal)
 
 ## Getting Started
 
