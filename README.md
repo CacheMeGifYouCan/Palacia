@@ -1,14 +1,14 @@
 ![Name](https://img.shields.io/badge/Marcus-Developer-red?style=for-the-badge)
-![Issues](https://img.shields.io/github/issues/cachemegifyoucan/palacia?style=for-the-badge)
-![Followers](https://img.shields.io/github/followers/cachemegifyoucan?style=for-the-badge)
-![Stars](https://img.shields.io/github/stars/cachemegifyoucan?style=for-the-badge)
-![Pull Requests](https://img.shields.io/github/issues-pr/cachemegifyoucan/palacia?style=for-the-badge)
-![Last Commit](https://img.shields.io/github/last-commit/cachemegifyoucan/palacia/main?style=for-the-badge)
+![Issues](https://img.shields.io/github/issues/marcusal/palacia?style=for-the-badge)
+![Followers](https://img.shields.io/github/followers/marcusal?style=for-the-badge)
+![Stars](https://img.shields.io/github/stars/marcusal?style=for-the-badge)
+![Pull Requests](https://img.shields.io/github/issues-pr/marcusal/palacia?style=for-the-badge)
+![Last Commit](https://img.shields.io/github/last-commit/marcusal/palacia/main?style=for-the-badge)
 
 # Project 4 - Palacia Cruise Website
 
 ### View in browser
-[Live](https://cachemegifyoucan.github.io/Palacia/)
+[Live](https://marcusal.github.io/Palacia/)
 
 ### Screenshot
 ![Screenshot](mockup.png)
